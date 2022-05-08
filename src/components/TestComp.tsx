@@ -38,7 +38,7 @@ const TestComp = () => {
         style={tailwind`w-20 h-10 bg-gray-500 flex-row justify-center items-center`}
         onPress={() => updateRecoilState()}
       >
-        <Text>Update</Text>
+        <Text style={tailwind`text-white`}>Update</Text>
       </TouchableOpacity>
     </View>
   );

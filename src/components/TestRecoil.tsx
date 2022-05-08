@@ -9,7 +9,9 @@ const TestRecoil = () => {
   return (
     <View style={tailwind`flex-col justify-center items-center mt-10`}>
       <Text>[Recoil state]</Text>
-      <Text style={tailwind`font-bold`}>{common?.something ?? "-"}</Text>
+      <Text style={tailwind`font-bold`}>
+        {common?.something ?? "Not provided yet"}
+      </Text>
     </View>
   );
 };
