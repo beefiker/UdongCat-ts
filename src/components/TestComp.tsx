@@ -28,7 +28,7 @@ const TestComp = () => {
   return (
     <View style={tailwind`flex-row mt-10`}>
       <TextInput
-        style={tailwind`w-50 h-10 border-2 p-1`}
+        style={tailwind`w-50 h-10 border-2 border-black dark:border-white p-1 text-black dark:text-white`}
         value={value}
         onChange={(e: NativeSyntheticEvent<TextInputChangeEventData>) =>
           handleInputChange(e)
