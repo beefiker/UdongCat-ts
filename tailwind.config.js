@@ -14,8 +14,8 @@ module.exports = {
           resizeMode: `repeat`,
         },
         "test-merong": `px-4 py-1 rounded-full bg-red-800 text-white`,
-        "flex-row-center": `flex-row justify-center items-center`,
-        "flex-col-center": `flex-col justify-center items-center`,
+        "flex-row-center": `flex flex-row justify-center items-center`,
+        "flex-col-center": `flex flex-col justify-center items-center`,
       });
     }),
   ],

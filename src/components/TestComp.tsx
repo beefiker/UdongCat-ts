@@ -26,16 +26,16 @@ const TestComp = () => {
   };
 
   return (
-    <View style={tailwind`flex-row mt-10`}>
+    <View style={tailwind`flex-row-center mt-10`}>
       <TextInput
-        style={tailwind`w-50 h-10 border-2 border-black dark:border-white p-1 text-black dark:text-white`}
+        style={tailwind`w-50 h-10 rounded-l-md border-2 border-black dark:border-white p-1 text-black dark:text-white`}
         value={value}
         onChange={(e: NativeSyntheticEvent<TextInputChangeEventData>) =>
           handleInputChange(e)
         }
       />
       <TouchableOpacity
-        style={tailwind`w-20 h-10 bg-gray-500 flex-row-center`}
+        style={tailwind`w-20 h-10 bg-gray-500 rounded-r-md flex-row-center`}
         onPress={() => updateRecoilState()}
       >
         <Text style={tailwind`text-white`}>Update</Text>

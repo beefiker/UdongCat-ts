@@ -1,8 +1,9 @@
-import commonState from "atoms/commonState";
 import React from "react";
 import { Text, View } from "react-native";
-import { useRecoilState, useRecoilValue } from "recoil";
-import tailwind from "twrnc";
+import { useRecoilValue } from "recoil";
+
+import commonState from "atoms/commonState";
+import tailwind from "lib/tailwind";
 
 const TestRecoil = () => {
   const common = useRecoilValue(commonState);
