@@ -9,7 +9,7 @@ import {
   View,
 } from "react-native";
 import { useRecoilState } from "recoil";
-import tailwind from "twrnc";
+import tailwind from "lib/tailwind";
 
 const TestComp = () => {
   const [value, setValue] = useState<string>("");
@@ -35,7 +35,7 @@ const TestComp = () => {
         }
       />
       <TouchableOpacity
-        style={tailwind`w-20 h-10 bg-gray-500 flex-row justify-center items-center`}
+        style={tailwind`w-20 h-10 bg-gray-500 flex-row-center`}
         onPress={() => updateRecoilState()}
       >
         <Text style={tailwind`text-white`}>Update</Text>

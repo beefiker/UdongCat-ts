@@ -7,7 +7,7 @@ import tailwind from "twrnc";
 const TestRecoil = () => {
   const common = useRecoilValue(commonState);
   return (
-    <View style={tailwind`flex-col justify-center items-center mt-10`}>
+    <View style={tailwind`flex-col-center mt-10`}>
       <Text style={tailwind`text-black dark:text-white`}>[Recoil state]</Text>
       <Text style={tailwind`font-bold text-black dark:text-white`}>
         {common?.something ?? "Not provided yet"}
