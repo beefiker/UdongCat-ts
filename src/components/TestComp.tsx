@@ -1,7 +1,8 @@
 import React from "react";
+import { Text } from "react-native";
 
 const TestComp = () => {
-  return <div>TestComp</div>;
+  return <Text>TestComp</Text>;
 };
 
 export default TestComp;
