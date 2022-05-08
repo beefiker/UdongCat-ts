@@ -1,0 +1,8 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./src"
+  },
+  "exclude": ["node_modules", "**/*.d.ts", "**/*.test.ts", "babel.config.js"]
+}
