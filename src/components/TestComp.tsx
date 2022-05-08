@@ -9,7 +9,8 @@ import {
   View,
 } from "react-native";
 import { useRecoilState } from "recoil";
-import tailwind from "lib/tailwind";
+import tailwind from "twrnc";
+import customedTailwind from "lib/tailwind";
 
 const TestComp = () => {
   const [value, setValue] = useState<string>("");
@@ -26,7 +27,7 @@ const TestComp = () => {
   };
 
   return (
-    <View style={tailwind`flex-row-center mt-10`}>
+    <View style={customedTailwind`flex-row-center mt-10`}>
       <TextInput
         style={tailwind`w-50 h-10 rounded-l-md border-2 border-black dark:border-white p-1 text-black dark:text-white`}
         value={value}
@@ -35,7 +36,7 @@ const TestComp = () => {
         }
       />
       <TouchableOpacity
-        style={tailwind`w-20 h-10 bg-gray-500 rounded-r-md flex-row-center`}
+        style={customedTailwind`w-20 h-10 bg-gray-500 rounded-r-md flex-row-center`}
         onPress={() => updateRecoilState()}
       >
         <Text style={tailwind`text-white`}>Update</Text>
