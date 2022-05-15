@@ -12,7 +12,7 @@ import { useRecoilState } from "recoil";
 import tailwind from "twrnc";
 import customedTailwind from "lib/tailwind";
 
-const TestComp = () => {
+function TestComp() {
   const [value, setValue] = useState<string>("");
   const [common, setCommon] = useRecoilState(commonState);
 
@@ -43,6 +43,6 @@ const TestComp = () => {
       </TouchableOpacity>
     </View>
   );
-};
+}
 
 export default TestComp;

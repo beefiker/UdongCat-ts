@@ -7,7 +7,7 @@ import commonState from "atoms/commonState";
 import tailwind from "twrnc";
 import customedTailwind from "lib/tailwind";
 
-const TestRecoil = () => {
+function TestRecoil() {
   const common = useRecoilValue(commonState);
   return (
     <View style={customedTailwind`flex-col-center mt-10`}>
@@ -17,6 +17,6 @@ const TestRecoil = () => {
       </Text>
     </View>
   );
-};
+}
 
 export default TestRecoil;
