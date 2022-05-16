@@ -23,6 +23,7 @@ module.exports = function (api) {
             "@components": "./src/components",
             "@utils": "./src/utils",
             "@hooks": "./src/hooks",
+            "@locale": "./src/locale",
           },
         },
       ],

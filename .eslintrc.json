@@ -36,6 +36,9 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "global-require": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "react/require-default-props": "off"
   }
 }
